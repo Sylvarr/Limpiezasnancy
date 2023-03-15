@@ -1,0 +1,105 @@
+/* ! Colors */
+/* Blue: #007ffa */
+/* Purple: #1a0760 */
+
+/* ! Fonts */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Merriweather', serif; */
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.limpiezas {
+  color: #007ffa;
+}
+.nancy {
+  color: #1a0760;
+}
+
+.button {
+  color: #007ffa;
+}
+
+.transparent {
+  position: fixed;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  display: none;
+}
+
+p,
+.text {
+  font-family: "Merriweather", serif;
+  text-align: justify;
+}
+
+.nav-width {
+  max-width: 1400px;
+}
+
+hr {
+  height: 0px;
+  border-radius: 2px;
+  color: #007ffa;
+  border: 2px solid;
+  width: 80%;
+  margin-inline: auto;
+  max-width: 1400px;
+}
+
+.hide-text {
+  display: none;
+}
+
+.card-width {
+  max-width: 576px;
+}
+
+.card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+@media screen and (min-width: 576px) {
+  .hide-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .hide-button {
+    display: none;
+  }
+
+  .card-hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media (min-width: 315px) {
+  p {
+    font-size: calc(0.8125rem + ((1vw - 3.15px) * 1.0169));
+    min-height: 0vw;
+  }
+}
+@media (min-width: 1200px) {
+  p {
+    font-size: 22px;
+  }
+}
