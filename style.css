@@ -44,6 +44,9 @@ a:active {
 p,
 .text {
   font-family: "Merriweather", serif;
+}
+
+.text-justify {
   text-align: justify;
 }
 
