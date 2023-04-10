@@ -32,15 +32,6 @@ a:active {
   color: #007ffa;
 }
 
-.transparent {
-  position: fixed;
-  z-index: -1;
-  height: 100vh;
-  width: 100vw;
-  background-color: transparent;
-  display: none;
-}
-
 p,
 .text {
   font-family: "Merriweather", serif;
@@ -86,23 +77,47 @@ hr {
   .hide-button {
     display: none;
   }
+}
 
+@media screen and (min-width: 768px) {
   .card-hide {
+    display: none !important;
+  }
+
+  .card.w-75 {
+    width: 75% !important;
+  }
+  .card-img-top.p-4 {
+    padding: 2rem !important;
+  }
+
+  .row-cols-md-2 > * {
+    max-width: 45%;
+  }
+  .g-3 > .col {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .row-cols-md-2.row-center-md {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .big-card-hide {
     display: none;
   }
 }
 
-@media screen and (max-width: 576px) {
-}
-
 @media (min-width: 315px) {
   p {
-    font-size: calc(0.8125rem + ((1vw - 3.15px) * 1.0169));
+    font-size: calc(0.8125rem + ((1vw - 3.15px) * 0.113));
     min-height: 0vw;
   }
 }
 @media (min-width: 1200px) {
   p {
-    font-size: 22px;
+    font-size: 14px;
   }
 }
