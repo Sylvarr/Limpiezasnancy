@@ -52,7 +52,6 @@ hr {
   border: 2px solid;
   width: 80%;
   margin-inline: auto;
-  max-width: 1400px;
 }
 
 .hide-text {
@@ -66,6 +65,15 @@ hr {
 .card {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.brief-description {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+footer {
+  padding: 5px 0;
 }
 
 @media screen and (min-width: 576px) {
@@ -104,9 +112,13 @@ hr {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .big-card-hide {
-    display: none;
+    display: none !important;
+  }
+
+  .footer-hide-mobile {
+    display: none !important;
   }
 }
 
@@ -118,6 +130,6 @@ hr {
 }
 @media (min-width: 1200px) {
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
