@@ -72,10 +72,6 @@ hr {
   font-weight: 300;
 }
 
-footer {
-  padding: 5px 0;
-}
-
 @media screen and (min-width: 576px) {
   .hide-text {
     display: flex;
@@ -87,7 +83,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .card-hide {
     display: none !important;
   }
@@ -112,12 +108,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .big-card-hide {
-    display: none !important;
-  }
-
-  .footer-hide-mobile {
     display: none !important;
   }
 }
