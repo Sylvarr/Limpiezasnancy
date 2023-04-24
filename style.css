@@ -72,6 +72,10 @@ hr {
   font-weight: 300;
 }
 
+.container {
+  max-width: 100% !important;
+}
+
 @media screen and (min-width: 576px) {
   .hide-text {
     display: flex;
