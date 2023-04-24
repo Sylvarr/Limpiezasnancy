@@ -1,3 +1,13 @@
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    document.getElementById("content-wrapper").style.opacity = "1";
+    document.getElementById("loading-screen").style.opacity = "0";
+    setTimeout(function () {
+      document.getElementById("loading-screen").style.display = "none";
+    }, 800);
+  }, 800);
+});
+
 function getCurrentYear() {
   const currentYear = new Date().getFullYear();
   return currentYear;
@@ -26,5 +36,5 @@ document.addEventListener("click", function (event) {
   }
 });
 
-// ScrollReveal().reveal(".card-reveal", { delay: 500 });
-// ScrollReveal().reveal(".card-reveal2", { delay: 800 });
+ScrollReveal().reveal(".servicios1", { delay: 300 });
+ScrollReveal().reveal(".card-reveal", { delay: 250 });
